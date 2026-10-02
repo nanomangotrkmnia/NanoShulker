@@ -16,13 +16,13 @@ public class ClientShulkerToggleCommand implements ClientModInitializer {
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registryAccess) -> dispatcher.register(
                 ClientCommandManager.literal("nanoshulker")
                         .then(ClientCommandManager.literal("on").executes(context -> {
-                            ClientConfig.allowNestedShulkers = true;
+                            ClientConfig.setEnabled(true);
                             context.getSource().sendFeedback(
                                     Text.literal("[NanoShulker] Nested Shulkers enabled."));
                             return Command.SINGLE_SUCCESS;
                         }))
                         .then(ClientCommandManager.literal("off").executes(context -> {
-                            ClientConfig.allowNestedShulkers = false;
+                            ClientConfig.setEnabled(false);
                             context.getSource().sendFeedback(
                                     Text.literal("[NanoShulker] Nested Shulkers disabled."));
                             return Command.SINGLE_SUCCESS;
