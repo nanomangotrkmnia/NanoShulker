@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "nanoshulker",
+  "version": "${version}",
+  "name": "NanoShulker",
+  "description": "Client-side mod that allows Shulker Boxes to be placed inside other Shulker Boxes. Toggle at runtime with /nanoshulker on|off.",
+  "authors": [
+    "NanoShulker"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.nanoshulker.ClientShulkerToggleCommand"
+    ]
+  },
+  "mixins": [
+    "nanoshulker.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "fabric-api": "*",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}

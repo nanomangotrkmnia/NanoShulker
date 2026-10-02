@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nanoshulker.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ShulkerBoxSlotMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

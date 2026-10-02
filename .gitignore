@@ -1,0 +1,24 @@
+# Gradle build outputs and caches
+.gradle/
+build/
+out/
+
+# Loom / Fabric dev-run artifacts
+run/
+remappedJars/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.code-workspace
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Java compiled output (if compiling outside Gradle)
+*.class
