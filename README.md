@@ -3,6 +3,8 @@ Requires Java 21 and Gradle 9.2.0
 Build with gradlew.bat
 made with ohio
 
+![NanoShulker showcase](INFO.png)
+
 ---
 
 ## Usage
